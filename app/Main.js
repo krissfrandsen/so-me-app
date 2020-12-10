@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import HomeGuest from "./components/HomeGuest";
 import Footer from "./components/Footer";
 
-const ExampleComponent = () => {
+const Main = () => {
   return (
     <>
       <Header />
@@ -14,4 +14,4 @@ const ExampleComponent = () => {
   );
 };
 
-ReactDOM.render(<ExampleComponent />, document.querySelector("#app"));
+ReactDOM.render(<Main />, document.querySelector("#app"));

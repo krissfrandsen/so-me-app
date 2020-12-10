@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer(props) {
+function Footer() {
   return (
     <footer className="border-top text-center small text-muted py-3">
       <p>
