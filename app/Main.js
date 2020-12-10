@@ -1,13 +1,17 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./components/Header";
+import HomeGuest from "./components/HomeGuest";
+import Footer from "./components/Footer";
 
 const ExampleComponent = () => {
   return (
-    <div>
-      <h1>This is our App</h1>
-      <p>hello</p>
-    </div>
-  )
-}
+    <>
+      <Header />
+      <HomeGuest />
+      <Footer />
+    </>
+  );
+};
 
-ReactDOM.render(<ExampleComponent />, document.quesrySelector("#app"))
+ReactDOM.render(<ExampleComponent />, document.querySelector("#app"));
