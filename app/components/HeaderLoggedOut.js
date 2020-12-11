@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 
-const HeaderLoggedOut = () => {
+const HeaderLoggedOut = ({ setLoggedIn }) => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
 
@@ -11,6 +11,7 @@ const HeaderLoggedOut = () => {
       const response = await Axios.post("http://localhost:8080/login", { username, password });
       if (response.data) {
         console.log(response.data);
+        setLoggedIn(true);
       } else {
         console.log("Incorrect username and password");
       }
